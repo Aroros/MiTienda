@@ -88,7 +88,7 @@ nav a{
     text-align: right; 
     justify-content: space-between;
     padding: 20px;
-    font-size: 12;
+    font-size: 1em;
     list-style: none; /*elimina los puntos de la lista*/
     text-decoration: none; /*no aparece lo puntos de la lista*/
 }
@@ -101,7 +101,7 @@ nav .nav-list  li {
 
 #inicio{
   width:100vw;
-  height: 100vh; 
+  height: 75vh; 
   align-items:center;
   justify-content:center;
   background-image: url("./imagenes/set\ capucha\ beltran.jpeg");
@@ -119,8 +119,7 @@ nav .nav-list  li {
 .texto-bienvenida {
   color:rgb(78, 71, 71);
   text-align: center;
-  /*background-color: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente para el texto */
-  font-size:2em;
+   font-size:2em;
   font-weight: bold;
 }
 
