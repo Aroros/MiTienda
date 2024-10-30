@@ -158,6 +158,10 @@ nav .nav-list  li {
 }
 
   
+#bordado{
+  background-color: #f4f4f4;
+
+}
 
 
 .video source {
@@ -168,6 +172,7 @@ nav .nav-list  li {
     justify-content: space-between;
     padding: 5%;
     border-width: 10%;
+    align-items: center;
 
 }
 
@@ -184,9 +189,10 @@ p.ubica{
 
 }
 
-#contacto{
+
+#ubicacion{
+  margin-top: 10px;
   height: 100%;
-  margin: 0;
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
@@ -195,6 +201,21 @@ p.ubica{
 }
 
 
+#contacto{
+  margin-top: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.mapa{
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
 
 
 /*=============================== I N I CI O  F O R M L A R I O ===
@@ -209,7 +230,7 @@ p.ubica{
 }
 
 .formulario h2 {
-  margin-top: 0;
+  margin-top: 10px;
   color: #333;
 }
 
@@ -299,15 +320,7 @@ div{
 
 
 
-#bordado{
-    background-color: lightblue;
 
-}
-
-#ubicacion{
-  background-color: lightblue;
-  display: flex;
-}
 
       
     
@@ -341,6 +354,7 @@ a{ /*color de enlace*/
     height: 15rem; /* Alto fijo de la grilla */
     padding:20px; 
     margin-left: 2rem; /* Margen izquierdo */
+    flex-grow: 1; /* Para llenar el espacio disponible */
   }
   
   h1 {
@@ -372,19 +386,20 @@ a{ /*color de enlace*/
 
   /* Media Queries para adaptarse a diferentes pantallas */
   @media (max-width: 1024px) {
-    .reseña {
-      grid-template-columns: repeat(2, 1fr);
+    .reseñas {
+      grid-template-columns: repeat(3, 1fr); /*en pantallas grandes*/
+      
     }
   }
 
   @media (max-width: 768px) {
-    .reseña {
-      grid-template-columns: 1fr;
+    .reseñas {
+      grid-template-columns: 1fr;/* Una columna en pantallas pequeñas */
+      grid-template-areas: "footer";   
     }
   }
-
-
-
+  
+  
 
 /*---------------  F O O T E R ---------------------*/
 
