@@ -98,30 +98,83 @@ nav .nav-list  li {
     display: inline-block; /*muestra una opcion al lado de la otra*/
     margin-right: 20px;
 }
-
-#inicio{
+/*----------------------------------ANTERIOR*/
+/*#inicio{
   width:100vw;
   height: 75vh; 
   align-items:center;
   justify-content:center;
   background-image: url("./imagenes/set\ capucha\ beltran.jpeg");
-  /*background-image: url("./imagenes/setcapucha.jpg");*/
-  /*background-image: url("./imagenes/mantaCrecimientoRosa.jpeg");*/
+  background-image: url("./imagenes/setcapucha.jpg");
+  background-image: url("./imagenes/mantaCrecimientoRosa.jpeg");
   Object-fit: cover; /* Para que la imagen se ajuste sin distorsionarse */
-  display: flex;
+  /*display: flex;
   background-size: cover;/* La imagen cubre todo el contenedor */
-  background-position:center; /*Centrado*/
-  
+  /*background-position:center; /*Centrado*/
+  /*}    -------------------------------FIN ANTERIOR*/
+
+
+
+ /* Sección inicio */
+ #inicio {
+  width: 100%;
+  height: 50vh; /* Ocupa el 50% de la pantalla */
+  background-image: url('./imagenes/SetBeltran.jpeg'); /* imagen */
+ /* background-image: url("./imagenes/et\ acolchado\ rosa.jpeg"); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain; /* Asegura que la imagen completa se vea */
 }
 
-/*----  TEXTO para portada ****************/
+/* Texto sobre la imagen */
+.texto-bienvenida {
+  color:rgb(110, 109, 109);
+  text-align: center;
+  font-size:1.5em;
+  font-weight: bold;
+  /*background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  /*padding: 1rem;
+  border-radius: 8px; 
+  max-width:  90%;*/
+ 
+}
 
+
+  /*color:rgb(78, 71, 71);
+  text-align: center;
+   font-size:2em;
+  font-weight: bold;*/
+
+
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  #inicio {
+    height: 30vh; /* Reduce la altura en pantallas pequeñas */
+  }
+}
+
+/* Media Query para pantallas muy grandes */
+@media (min-width: 1200px) {
+  #inicio {
+    height: 60vh; /* Aumenta la altura en pantallas grandes */
+  }
+
+}
+
+  /*----  TEXTO para portada ****************
 .texto-bienvenida {
   color:rgb(78, 71, 71);
   text-align: center;
    font-size:2em;
   font-weight: bold;
 }
+*/
+
+
 
 .video source {
     background-color: lightblue; 
