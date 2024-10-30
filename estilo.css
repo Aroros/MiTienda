@@ -7,6 +7,7 @@ html{
     height: 100%;
 }
 
+
 h1{
     color:grey;
     font-size: 24px;
@@ -32,7 +33,16 @@ h2{
 
 /*-------------------------------------------*/
 /* Estilos del header */
+@font-face {
+  font-family: 'MiFuente';
+  src: url('./fonts/Isabelle.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 header {
+  font-family: 'MiFuente', Arial, sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,10 +56,16 @@ header {
 }
 
 .logo {
+  font-family: 'MiFuente', Arial, sans-serif;
   display: flex;
   align-items: center;
+  color:white;
+  flex-direction: column; /* Alineación en columna para el nombre de la empresa */
+  font-size:larger ;
 
-}
+  }
+
+
 
 header img {
       width: 200px; /* Tamaño de la imagen de logo */
@@ -145,7 +161,7 @@ nav .nav-list  li {
 
 
 .video source {
-    background-color: lightblue; 
+    background-color:  #777;
     display:flex;
     flex-wrap: wrap;
     flex:1 1 200px;
@@ -178,13 +194,8 @@ p.ubica{
   background-color: #f4f4f4;
 }
 
-/*form{
-    color: grey;
-    background-color: lightblue;    
-    font-size: 12;
 
-    
-}*/
+
 
 /*=============================== I N I CI O  F O R M L A R I O ===
 /* Estilo del formulario */
@@ -202,15 +213,6 @@ p.ubica{
   color: #333;
 }
 
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
 
 .formulario button {
   width: 100%;
@@ -223,8 +225,8 @@ p.ubica{
   font-size: 16px;
 }
 
-formulario button:hover {
-  background-color: rgb(97, 145, 161);
+.formulario button:hover {
+  background-color: rgb(151, 125, 224);
 }
 
 /*=============  termina formulario ========================*/
@@ -338,7 +340,6 @@ a{ /*color de enlace*/
     padding: 20px;
     height: 15rem; /* Alto fijo de la grilla */
     padding:20px; 
-    /*overflow-y: auto; /* Para hacer scroll si el contenido es demasiado alto */
     margin-left: 2rem; /* Margen izquierdo */
   }
   
@@ -352,8 +353,7 @@ a{ /*color de enlace*/
   /* Estilo de cada tarjeta de reseña */
   .reseña {
     background-color: #fff;
-    /*background-color: rgb(202, 200, 200);*/
-    width: 15rem;
+     width: 15rem;
     /*height: 15px;*/
     padding: 15px;
     border-radius: 8px;
