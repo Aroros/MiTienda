@@ -99,20 +99,6 @@ nav .nav-list  li {
     margin-right: 20px;
 }
 /*----------------------------------ANTERIOR*/
-/*#inicio{
-  width:100vw;
-  height: 75vh; 
-  align-items:center;
-  justify-content:center;
-  background-image: url("./imagenes/set\ capucha\ beltran.jpeg");
-  background-image: url("./imagenes/setcapucha.jpg");
-  background-image: url("./imagenes/mantaCrecimientoRosa.jpeg");
-  Object-fit: cover; /* Para que la imagen se ajuste sin distorsionarse */
-  /*display: flex;
-  background-size: cover;/* La imagen cubre todo el contenedor */
-  /*background-position:center; /*Centrado*/
-  /*}    -------------------------------FIN ANTERIOR*/
-
 
 
  /* Sección inicio */
@@ -135,18 +121,8 @@ nav .nav-list  li {
   text-align: center;
   font-size:1.5em;
   font-weight: bold;
-  /*background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  /*padding: 1rem;
-  border-radius: 8px; 
-  max-width:  90%;*/
- 
+  
 }
-
-
-  /*color:rgb(78, 71, 71);
-  text-align: center;
-   font-size:2em;
-  font-weight: bold;*/
 
 
 
@@ -165,15 +141,7 @@ nav .nav-list  li {
 
 }
 
-  /*----  TEXTO para portada ****************
-.texto-bienvenida {
-  color:rgb(78, 71, 71);
-  text-align: center;
-   font-size:2em;
-  font-weight: bold;
-}
-*/
-
+  
 
 
 .video source {
@@ -196,17 +164,71 @@ nav .nav-list  li {
 
 
 p.ubica{
-    padding: 10px;
+    text-align: center;
+
 }
 
+#contacto{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
 
-
-form{
+/*form{
     color: grey;
     background-color: lightblue;    
     font-size: 12;
+
     
+}*/
+
+/*=============================== I N I CI O  F O R M L A R I O ===
+/* Estilo del formulario */
+.formulario {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
 }
+
+.formulario h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 10px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+formulario button:hover {
+  background-color: rgb(97, 145, 161);
+}
+
+/*=============  termina formulario ========================*/
+
 
 
   .producto :hover img { /*agranda imagen del flex cuando pasamo el mouse*/
@@ -305,6 +327,67 @@ a{ /*color de enlace*/
     color: aqua;
  }
  
+
+
+  /* Contenedor de la grilla */
+  .reseñas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #fff;
+    gap: 1rem;
+    padding: 20px;
+    height: 15rem; /* Alto fijo de la grilla */
+    padding:20px; 
+    /*overflow-y: auto; /* Para hacer scroll si el contenido es demasiado alto */
+    margin-left: 2rem; /* Margen izquierdo */
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+
+
+  /* Estilo de cada tarjeta de reseña */
+  .reseña {
+    background-color: #fff;
+    /*background-color: rgb(202, 200, 200);*/
+    width: 15rem;
+    /*height: 15px;*/
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    grid-template-rows: 1fr 1fr 1fr; /* /////////*/ 
+  }
+
+  .reseña h3 {
+    margin-top: 0;
+    color: #555;
+  }
+
+  .reseña p {
+    color: #777;
+  }
+
+  /* Media Queries para adaptarse a diferentes pantallas */
+  @media (max-width: 1024px) {
+    .reseñas {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .reseñas {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+
+
+/*---------------  F O O T E R ---------------------*/
+
  #pagina-footer{
   color: gray;
   background-color: black; 
