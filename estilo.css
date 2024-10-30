@@ -372,13 +372,13 @@ a{ /*color de enlace*/
 
   /* Media Queries para adaptarse a diferentes pantallas */
   @media (max-width: 1024px) {
-    .reseñas {
+    .reseña {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 768px) {
-    .reseñas {
+    .reseña {
       grid-template-columns: 1fr;
     }
   }
